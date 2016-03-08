@@ -15,7 +15,14 @@ module Dhh
       klass, act = get_controller_and_action(env)
       controller = klass.new(env)
 
-      text = controller.send(act)
+      begin
+        text = controller.send(act)
+      rescue
+        return [500,
+                {'Content-Type' => 'text/html'},
+                ["Looks like we cannot find the page you asked for! Sorry!"]
+        ]
+      end
 
 			[200,
        {'Content-Type' => 'text/html'},
