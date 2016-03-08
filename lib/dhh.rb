@@ -1,4 +1,5 @@
 require "dhh/version"
+require "dhh/array"
 
 module Dhh
 	class Application
