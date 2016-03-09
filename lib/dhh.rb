@@ -1,14 +1,17 @@
 require "dhh/version"
 require "dhh/array"
 require "dhh/routing"
+require "dhh/util"
+require "dhh/dependencies"
 
 module Dhh
 	class Application
 		def call(env)
-      if env['PATH_INFO'] == 'favicon.ico'
+      
+      if env['PATH_INFO'] == '/favicon.ico'
         return [404,
                 {'Content-Type' => 'text/html'},
-                []
+                ['Have you been looking for favicon, it does not exist.'],
         ]
       end
 
