@@ -3,6 +3,7 @@ require "dhh/array"
 require "dhh/routing"
 require "dhh/util"
 require "dhh/dependencies"
+require "dhh/controller"
 
 module Dhh
 	class Application
@@ -33,14 +34,4 @@ module Dhh
 			]
 		end
 	end
-
-  class Controller
-    def initialize(env)
-      @env = env
-    end
-
-    def env
-      @env
-    end
-  end
 end
