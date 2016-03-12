@@ -24,7 +24,7 @@ module Dhh
       rescue
         return [500,
                 {'Content-Type' => 'text/html'},
-                ["Looks like we cannot find the page you asked for! Sorry!"]
+                ["Something went wrong!"]
         ]
       end
 
