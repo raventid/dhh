@@ -4,6 +4,7 @@ require "dhh/routing"
 require "dhh/util"
 require "dhh/dependencies"
 require "dhh/controller"
+require "dhh/file_model.rb"
 
 module Dhh
 	class Application
