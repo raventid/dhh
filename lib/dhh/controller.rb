@@ -1,7 +1,10 @@
 require "erubis"
+require "dhh/file_model"
 
 module Dhh
   class Controller
+    include Dhh::Model
+
     def initialize(env)
       @env = env
     end
