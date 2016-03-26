@@ -12,7 +12,7 @@ module Dhh
       if env['PATH_INFO'] == '/favicon.ico'
         return [404,
                 {'Content-Type' => 'text/html'},
-                ['Have you been looking for favicon, it does not exist.'],
+                [],
         ]
       end
 
@@ -21,17 +21,21 @@ module Dhh
 
       begin
         text = controller.send(act)
+        rack_response = controller.get_response
+        if rack_response
+          [rack_response.status, rack_response.headers, [rack_response.body].flatten]
+        else
+          [200,
+           {'Content-Type' => 'text/html'}, 
+           [text]
+          ]
+        end
       rescue
         return [500,
                 {'Content-Type' => 'text/html'},
                 ["Something went wrong!"]
         ]
       end
-
-			[200,
-       {'Content-Type' => 'text/html'},
-			 [text]
-			]
 		end
 	end
 end
