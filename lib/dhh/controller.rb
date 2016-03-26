@@ -12,6 +12,14 @@ module Dhh
     def env
       @env
     end
+
+    def request
+      @request ||= Rack::Request.new(@env)
+    end
+
+    def params
+      request.params
+    end
  
     # Local variables is a hash of key: :value
     def render(view_name, locals = {})
