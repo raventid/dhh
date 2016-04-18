@@ -28,37 +28,46 @@
         </ul>
       </header>
       <section>
-        <h3>
-<a id="web-framework-for-ruby" class="anchor" href="#web-framework-for-ruby" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web-framework for Ruby.</h3>
+        <h2>
+<a id="dhh" class="anchor" href="#dhh" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dhh</h2>
 
-<p>Web framework, wich uses a lot of Ruby magic to achive nice balance between code readability, productivity of developer and speed of execution (but speed of execution is least important) </p>
+<p>Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file <code>lib/dhh</code>. To experiment with that code, run <code>bin/console</code> for an interactive prompt.</p>
 
-<h3>
-<a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use it?</h3>
-
-<p>Extend your controller with Dhh::Controller. And you will get the route called https://base_url/controller_name/action_name</p>
-
-<p><code>class HelloController &lt; Dhh::Controller</code>
-  <code># this will be https://base_url/hello/index</code>
-  <code>def index</code>
-    <code>render :index, noun: :unicorn</code>
-  <code>end</code></p>
-
-<p><code># dump_controller which show rack content</code>
-  <code>def env_info</code>
-    <code>ar = env.to_s.split(',')</code>
-    <code>output = ''</code>
-    <code>ar.each do |line|</code>
-      <code>output += "#{line.to_s}" + "&lt;br&gt;"</code>
-    <code>end</code>
-    <code>output</code>
-  <code>end</code>
-<code>end</code></p>
+<p>TODO: Delete this and the text above, and describe your gem</p>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Add this line to your application's Gemfile:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>dhh<span class="pl-pds">'</span></span></pre></div>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install dhh
+</code></pre>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>TODO: Write usage instructions here</p>
+
+<h3>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development</h3>
+
+<p>After checking out the repo, run <code>bin/setup</code> to install dependencies. You can also run <code>bin/console</code> for an interactive prompt that will allow you to experiment.</p>
+
+<p>To install this gem onto your local machine, run <code>bundle exec rake install</code>. To release a new version, update the version number in <code>version.rb</code>, and then run <code>bundle exec rake release</code>, which will create a git tag for the version, push git commits and tags, and push the <code>.gem</code> file to <a href="https://rubygems.org">rubygems.org</a>.</p>
+
+<h3>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h3>
+
+<p>Bug reports and pull requests are welcome on GitHub at <a href="https://github.com/%5BUSERNAME%5D/dhh">https://github.com/[USERNAME]/dhh</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/raventid">raventid</a></p>
