@@ -22,7 +22,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Controllers:
+
+Extend your controller with Dhh::Controller. And you will get the route called https://base_url/controller_name/action_name
+
+``` ruby
+class HelloController < Dhh::Controller
+  # this will be https://base_url/hello/index
+  def index
+    render :index, noun: :unicorn
+  end
+  
+  # dump_controller which show rack content
+  def env_info
+    ar = env.to_s.split(',')
+    output = ''
+    ar.each do |line|
+      output += "#{line.to_s}" + "<br>"
+    end
+    output
+  end
+end
+```
 
 ## Development
 
