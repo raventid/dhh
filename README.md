@@ -45,6 +45,31 @@ class HelloController < Dhh::Controller
 end
 ```
 
+Views:
+
+To create a view you should follow next rules:
+
+1. In app/views folder create folder with controller name, e.g. HelloController's view folder should have a name app/views/hello/.
+2. To bind view to an an action use render method.
+
+Controller:
+
+```ruby
+# app/controllers/hello_controller.rb
+class HelloController < Dhh::Controller
+  def index
+    render :index, noun: :unicorn
+  end
+end
+```
+
+View:
+
+```html
+# app/views/hello/index.html.erb
+<h1>This is my <%= unicorn %></h1>
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
