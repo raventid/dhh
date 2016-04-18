@@ -34,6 +34,28 @@
 <p>Web framework, wich uses a lot of Ruby magic to achive nice balance between code readability, productivity of developer and speed of execution (but speed of execution is least important) </p>
 
 <h3>
+<a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use it?</h3>
+
+<p>Extend your controller with Dhh::Controller. And you will get the route called https://base_url/controller_name/action_name</p>
+
+<p><code>class HelloController &lt; Dhh::Controller</code>
+  <code># this will be https://base_url/hello/index</code>
+  <code>def index</code>
+    <code>render :index, noun: :unicorn</code>
+  <code>end</code></p>
+
+<p><code># dump_controller which show rack content</code>
+  <code>def env_info</code>
+    <code>ar = env.to_s.split(',')</code>
+    <code>output = ''</code>
+    <code>ar.each do |line|</code>
+      <code>output += "#{line.to_s}" + "&lt;br&gt;"</code>
+    <code>end</code>
+    <code>output</code>
+  <code>end</code>
+<code>end</code></p>
+
+<h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
