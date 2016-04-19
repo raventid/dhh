@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-Controllers:
+### Controllers:
 
 Extend your controller with Dhh::Controller. And you will get the route called https://base_url/controller_name/action_name
 
@@ -43,7 +43,7 @@ class HelloController < Dhh::Controller
 end
 ```
 
-Views:
+### Views:
 
 To create a view you should follow next rules:
 
