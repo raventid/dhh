@@ -1,8 +1,6 @@
 # Dhh
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dhh`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Dhh project! This web framework created as easy to use and small clone of rails, which is working on top of Rack.
 
 ## Installation
 
@@ -78,5 +76,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dhh.
+Bug reports and pull requests are welcome on GitHub at https://github.com/raventid/dhh.
 
