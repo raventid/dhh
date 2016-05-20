@@ -6,9 +6,8 @@ require "dhh/dependencies"
 require "dhh/controller"
 
 module Dhh
-	class Application
-		def call(env)
-      
+  class Application
+    def call(env)
       if env['PATH_INFO'] == '/favicon.ico'
         return [404,
                 {'Content-Type' => 'text/html'},
@@ -36,6 +35,6 @@ module Dhh
                 ["Something went wrong!"]
         ]
       end
-		end
-	end
+    end
+  end
 end
