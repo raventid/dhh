@@ -1,7 +1,7 @@
 # Dhh
 [![Build Status](https://travis-ci.org/raventid/dhh.svg?branch=master)](https://travis-ci.org/raventid/dhh)
 
-Welcome to Dhh project! This web framework created as easy to use and small clone of rails, which is working on top of Rack.
+Welcome to Dhh project! This web framework created as an easy to use and small clone of Rails, which is working on top of Rack.
 
 ## Installation
 
