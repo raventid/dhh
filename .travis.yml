@@ -5,4 +5,4 @@ rvm:
   - 2.4
   - jruby
 
-script: rspec spec
+script: ruby ./test/test_application.rb
