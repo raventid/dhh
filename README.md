@@ -3,6 +3,8 @@
 
 Welcome to Dhh project! This web framework created as an easy to use and small clone of Rails, which is working on top of Rack.
 
+2018 NOTE: Hey, it's long time since I've not contributed to this project, I think I know where I wanna lead this. It will be async highlevel framework, super simple, super lightweight. Stay tuned.
+
 ## Installation
 
 Add this line to your application's Gemfile:
